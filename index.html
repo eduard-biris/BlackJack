@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BlackJack</title>
+</head>
+<body>
+    <h1> BlackJack </h1>
+    <div id="canvas">
+        <div id="menu">
+            <div id="oldScoreDiv">
+               <a id="oldScore"></a>
+            </div>
+            <button id="start"> START </button>
+            <button id="restart"> New Game </button>
+        </div>
+        <div id="over">
+            <p id="overText"></p>
+        </div>
+        <div id="stats">
+            <div id="player">
+                <h2>Player</h6>
+                <strong> HAVE: </strong> <a id="have">0</a>
+            </div>
+            <div id="dealerDiv">
+                <h2>Dealer</h6>
+                <strong> HAVE: </strong> <a id="dealer">0</a>
+            </div>
+        </div>
+        <div id="game">
+            <div id="playerDiv">
+
+            </div>
+            <div id="dealerCardDiv">
+
+            </div>
+        </div>
+
+        <div id="buttons">
+            <div id="scoreDiv">
+                <strong>MONEY: </strong><a id="score">0</a>
+                <br>
+                <input type="number" id="bid" value=100>
+            </div>
+            <div id="buttonsDiv">
+                <button id="hit"> HIT </button>
+                <button id="hold"> HOLD </button>
+            </div>
+        </div>
+    </div>
+    <div id="desc">
+        <p>
+            Press the <strong>New Game</strong> button to start a new game. <strong>HIT</strong> button gives you one additional card,
+        <strong>HOLD</strong> button skips your turn. You must get as close to 21 as possible, but not get past 21. Choose the sum you
+        want to <strong>BID</strong> in the bottom left corner. After a turn, you can press <strong>START</strong> to play again if
+        you have enough money. <strong>ENJOY! ☺</strong>
+        </p>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
